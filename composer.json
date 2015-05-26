@@ -1,5 +1,5 @@
 {
-    "name": "your-name-here/Bootstrap",
+    "name": "gwd/Bootstrap",
     "description": "Bootstrap plugin for CakePHP",
     "type": "cakephp-plugin",
     "require": {
