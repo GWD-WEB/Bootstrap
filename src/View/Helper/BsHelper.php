@@ -41,11 +41,11 @@ class BsHelper extends Helper{
 		if(isset($options['class'])){
 			$html['class'] .= ' '.$options['class'];
 		}
-		echo $this->Html->link($text, $link, $html);
+		return $this->Html->link($text, $link, $html);
 	}
 
 	public function glyph($glyph, $class = ''){
-		echo $glyphicon = '<span class="glyphicon glyphicon-'.$glyph.' '.$class.'"></span>';
+		return $glyphicon = '<span class="glyphicon glyphicon-'.$glyph.' '.$class.'"></span>';
 	}
 	
 }
