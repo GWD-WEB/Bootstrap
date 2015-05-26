@@ -11,7 +11,7 @@ The recommended way to install composer packages is:
 
 ```
 composer require your-name-here/Bootstrap
-
+```
 
 ## Usage
 
@@ -23,13 +23,16 @@ composer require your-name-here/Bootstrap
 	tooltip: text to display as Bootstrap's Tooltip
 	glyphicon: glyphicon icon withou the prefix glyphicon- E.g. edit|eye-open|trash
 	class: additional classes
-
+```
 $this->Bs->button("My link", '/', ['type'=>'primary', 'tooltip'=>'Click here to see it!', 'glyphicon'=>'eye-open', 'class'=>'btn-xs']);
-
+```
 2) glyph($glyph, $class = '')
     - $glyph = glyphicon icon withou the prefix glyphicon- E.g. edit|eye-open|trash
     - $class(optional) = additional classes
 
-$this->Bs->glyph('download', 'green-color'); will output:
+```
+$this->Bs->glyph('download', 'green-color');
+```
+will output:
 
 <span class="glyphicon glyphicon-dowload green-color"></span>
