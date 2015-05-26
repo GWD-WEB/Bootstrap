@@ -43,5 +43,9 @@ class BsHelper extends Helper{
 		}
 		echo $this->Html->link($text, $link, $html);
 	}
+
+	public function glyph($glyph, $class = ''){
+		echo $glyphicon = '<span class="glyphicon glyphicon-'.$glyph.' '.$class.'"></span>';
+	}
 	
 }
