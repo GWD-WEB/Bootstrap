@@ -8,6 +8,8 @@ class BsHelper extends Helper{
 	
 	var $helpers = ['Html', 'Flash'];
 	private $tooltip_loaded = false;
+	private $glyphs_cells = [];
+	private $glyphs_cells_class = '';
 	
 	public function loadTooltip(){
 		$this->tooltip_loaded = true;
@@ -47,5 +49,18 @@ class BsHelper extends Helper{
 	public function glyph($glyph, $class = ''){
 		return $glyphicon = '<span class="glyphicon glyphicon-'.$glyph.' '.$class.'"></span>';
 	}
+
+	public function setGlyphCellConfigs($values, $class = ''){
+		$this->glyphs_cells = $values;
+		$this->glyphs_cells_class = $class;
+	}
+	
+	public function glyphCell($value){
+		$class = isset($this->glyphs_cells_class[$value]) ? $this->glyphs_cells_class[$value] : ''; 
+		if(isset($this->glyphs_cells[$value]))
+			return $this->glyph($this->glyphs_cells[$value], $class);
+		else return '';
+	}
+
 	
 }
