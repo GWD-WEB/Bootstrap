@@ -21,6 +21,7 @@ class BsHelper extends Helper{
 	}
 	
 	public function button($text, $link, $options){
+		$html = $options;
 		if(isset($options['type'])){
 			$html['class'] = 'btn btn-'.$options['type'];
 		}
