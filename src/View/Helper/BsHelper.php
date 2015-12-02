@@ -32,6 +32,7 @@ class BsHelper extends Helper{
 			$html['data-toggle'] = "tooltip";
 			$html['rel'] = 'tooltip';
 			$html['data-placement'] = "top";
+			$html['data-container'] = 'body';
 			$html['title'] = $options['tooltip'];
 		}
 		
