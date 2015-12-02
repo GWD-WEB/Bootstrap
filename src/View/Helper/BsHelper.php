@@ -30,6 +30,7 @@ class BsHelper extends Helper{
 		if(isset($options['tooltip'])){
 			if(!$this->tooltip_loaded) $this->tooltipNotLoaded();
 			$html['data-toggle'] = "tooltip";
+			$html['rel'] = 'tooltip';
 			$html['data-placement'] = "top";
 			$html['title'] = $options['tooltip'];
 		}
